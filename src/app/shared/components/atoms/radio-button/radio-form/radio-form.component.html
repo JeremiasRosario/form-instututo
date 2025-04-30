@@ -1,0 +1,12 @@
+<div class="flex items-center gap-2">
+    <div>
+        <h3>{{label()}}</h3>
+        @for (opt of options(); track opt.key) {
+        <div class="flex items-center gap-2 field-checkbox">
+            <p-radiobutton [inputId]="opt.key" name="options" [value]="opt" size="small"
+                (onChange)="handleCheckBoxChange($event)"></p-radiobutton>
+            <label [for]="opt.key">{{ opt.name }}</label>
+        </div>
+        }
+    </div>
+</div>

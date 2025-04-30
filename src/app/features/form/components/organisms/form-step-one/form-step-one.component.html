@@ -1,0 +1,25 @@
+<div class="p-10 space-y-6">
+    <div>
+        <h1 class="text-2xl font-bold">
+            Formulario de Registro
+        </h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <atom-input-form label="Nombres" />
+        <atom-input-form label="Apellidos" />
+        <atom-input-form label="Email" type="email" />
+        <atom-input-form label="Teléfono" type="number" />
+        <atom-input-form label="Ministerio" />
+        <atom-input-form label="¿A cual iglesia perteneces?" />
+        <div class="md:col-span-2">
+            <atom-text-area label="¿Qué expectativas tienes sobre esta charla?" />
+        </div>
+        <div class="md:col-span-2">
+            <atom-text-area label="Cuéntanos un poco sobre ti." />
+        </div>
+        <div class="md:col-span-2">
+            <!-- <atom-check-box-form label="Eres cristiano?" [options]="options()" /> -->
+            <atom-radio-form label="¿Cómo te enteraste de la charla?" [options]="options()" />
+        </div>
+    </div>
+</div>
